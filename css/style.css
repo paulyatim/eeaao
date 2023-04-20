@@ -22,7 +22,7 @@ a {
     width: 100vw;
     height: 968px;
     background-position: center;
-    background-image: url(/images/hero-image-mobile.png);
+    background-image: url(../images/hero-image-mobile.png);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -73,19 +73,19 @@ a {
     font-size: 16px;
 }
 #danielsHome {
-    background-image: url(/images/daniels-bg-mobile.png);
+    background-image: url(../images/daniels-bg-mobile.png);
 }
 #castHome {
-    background-image: url(/images/cast-bg-mobile.png);
+    background-image: url(../images/cast-bg-mobile.png);
 }
 #a24Home {
-    background-image: url(/images/a24-bg-mobile.png);
+    background-image: url(../images/a24-bg-mobile.png);
 }
 #premiosHome {
-    background-image: url(/images/premios-bg-mobile.png);
+    background-image: url(../images/premios-bg-mobile.png);
 }
 #jumpingPadHome {
-    background-image: url(/images/jumping-pad-bg-mobile.png);
+    background-image: url(../images/jumping-pad-bg-mobile.png);
 }
 footer {
     text-align: center;
@@ -118,7 +118,7 @@ footer {
         width: 100vw;
         height: 1200px;
         background-position: 0 20%;
-        background-image: url(/images/hero-image.png);
+        background-image: url(../images/hero-image.png);
     }
     #pageTitle {
         text-align: right;
@@ -151,25 +151,25 @@ footer {
         font-size: 20px;
     }
     #danielsHome {
-        background-image: url(/images/daniels-bg.png);
+        background-image: url(../images/daniels-bg.png);
     }
     #castHome {
-        background-image: url(/images/cast-bg.png);
+        background-image: url(../images/cast-bg.png);
         justify-content: flex-end;
     }
     #a24Home {
-        background-image: url(/images/a24-bg.png);
+        background-image: url(../images/a24-bg.png);
     }
     #premiosHome {
-        background-image: url(/images/premios-bg.png);
+        background-image: url(../images/premios-bg.png);
         justify-content: flex-end;
     }
     #jumpingPadHome {
-        background-image: url(/images/jumping-pad-bg.png);
+        background-image: url(../images/jumping-pad-bg.png);
         justify-content: center;
     }
     footer {
-        padding: 2%;
+        padding:0.5%;
     }
     .socials {
         display: flex;
