@@ -2,6 +2,87 @@
     font-family: cubano;
     src: url(/fonts/Cubano.ttf);
 }
+@font-face {
+    font-family: castoro;
+    src: url(/fonts/CastoroTitling.ttf);
+}
+@font-face {
+    font-family: greatVibes;
+    src: url(/fonts/GreatVibes.ttf);
+}
+@font-face {
+    font-family: homemadeApple;
+    src: url(/fonts/HomemadeApple.ttf);
+}
+@font-face {
+    font-family: irishGrover;
+    src: url(/fonts/IrishGrover.ttf);
+}
+@font-face {
+    font-family: barcode;
+    src: url(/fonts/LibreBarcode39.ttf);
+}
+@font-face {
+    font-family: luckiestGuy;
+    src: url(/fonts/LuckiestGuy.ttf);
+}
+@font-face {
+    font-family: redacted;
+    src: url(/fonts/RedactedScript.ttf);
+}
+@font-face {
+    font-family: rubikPixels;
+    src: url(/fonts/RubikPixels.ttf);
+}
+@font-face {
+    font-family: sedgwickAve;
+    src: url(/fonts/SedgwickAve.ttf);
+}
+@keyframes font-changer {
+    0% {
+        font-family: cubano;
+    }
+    10% {
+        font-family: castoro;
+        color: #AB0223;
+    }
+    20% {
+        font-family: greatVibes;
+        color: #EB8600;
+    }
+    30% {
+        font-family: homemadeApple;
+        color: #C19489;
+    }
+    40% {
+        font-family: irishGrover;
+        color: #015E72;
+    }
+    50% {
+        font-family: barcode;
+        color: #FFFFFF;
+    }
+    60% {
+        font-family: luckiestGuy;
+        color: #AB0223;
+    }
+    70% {
+        font-family: rubikPixels;
+        color: #EB8600;
+    }
+    80% {
+        font-family: sedgwickAve;
+        color: #C19489;
+    }
+    90% {
+        font-family: redacted;
+        color: #015E72;
+    }
+    100% {
+        font-family: cubano;
+        color: #FFFFFF;
+    }
+}
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -37,7 +118,6 @@ a {
 }
 #pageTitle h1 {
     font-size: 48px;
-    padding: 0 5%;
 }
 #pageTitle h2 {
     font-size: 24px;
@@ -129,6 +209,11 @@ footer {
     #pageTitle h1 {
         font-size: 96px;
         padding: 0;
+    }
+    #pageTitle h1:hover, .home-section h3:hover {
+        animation-name: font-changer;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
     }
     #pageTitle h2 {
         font-size: 48px;
