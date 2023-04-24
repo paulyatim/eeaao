@@ -1,42 +1,42 @@
 @font-face {
     font-family: cubano;
-    src: url(/fonts/Cubano.ttf);
+    src: url(../fonts/Cubano.ttf);
 }
 @font-face {
     font-family: castoro;
-    src: url(/fonts/CastoroTitling.ttf);
+    src: url(../fonts/CastoroTitling.ttf);
 }
 @font-face {
     font-family: greatVibes;
-    src: url(/fonts/GreatVibes.ttf);
+    src: url(../fonts/GreatVibes.ttf);
 }
 @font-face {
     font-family: homemadeApple;
-    src: url(/fonts/HomemadeApple.ttf);
+    src: url(../fonts/HomemadeApple.ttf);
 }
 @font-face {
     font-family: irishGrover;
-    src: url(/fonts/IrishGrover.ttf);
+    src: url(../fonts/IrishGrover.ttf);
 }
 @font-face {
     font-family: barcode;
-    src: url(/fonts/LibreBarcode39.ttf);
+    src: url(../fonts/LibreBarcode39.ttf);
 }
 @font-face {
     font-family: luckiestGuy;
-    src: url(/fonts/LuckiestGuy.ttf);
+    src: url(../fonts/LuckiestGuy.ttf);
 }
 @font-face {
     font-family: redacted;
-    src: url(/fonts/RedactedScript.ttf);
+    src: url(../fonts/RedactedScript.ttf);
 }
 @font-face {
     font-family: rubikPixels;
-    src: url(/fonts/RubikPixels.ttf);
+    src: url(../fonts/RubikPixels.ttf);
 }
 @font-face {
     font-family: sedgwickAve;
-    src: url(/fonts/SedgwickAve.ttf);
+    src: url(../fonts/SedgwickAve.ttf);
 }
 @keyframes font-changer {
     0% {
@@ -212,7 +212,7 @@ footer {
     }
     #pageTitle h1:hover, .home-section h3:hover {
         animation-name: font-changer;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-iteration-count: infinite;
     }
     #pageTitle h2 {
