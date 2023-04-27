@@ -130,9 +130,6 @@ a {
     margin-bottom: 0;
     text-align: center;
 }
-.mobile-disabled {
-    display: none;
-}
 .home-section {
     width: 100%;
     height: 968px;
@@ -143,6 +140,7 @@ a {
     display: flex;
     align-items: center;
     padding: 0 10%;
+    justify-content: center;
 }
 .home-section h3 {
     font-size: 48px;
@@ -151,6 +149,9 @@ a {
 }
 .home-section p {
     font-size: 16px;
+}
+.home-section a {
+    text-decoration: underline;
 }
 #danielsHome {
     background-image: url(../images/daniels-bg-mobile.png);
