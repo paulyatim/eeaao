@@ -1,3 +1,4 @@
+/* --------------- FONTS --------------- */
 @font-face {
     font-family: cubano;
     src: url(../fonts/Cubano.ttf);
@@ -38,6 +39,7 @@
     font-family: sedgwickAve;
     src: url(../fonts/SedgwickAve.ttf);
 }
+/* --------------- ANIMATIONS --------------- */
 @keyframes font-changer {
     0% {
         font-family: cubano;
@@ -83,6 +85,104 @@
         color: #FFFFFF;
     }
 }
+@keyframes daniels-animation {
+    0% {
+        background-image: url(../images/daniels/daniels-1.png);
+    }
+    12.5% {
+        background-image: url(../images/daniels/daniels-2.png);
+    }
+    25% {
+        background-image: url(../images/daniels/daniels-3.png);
+    }
+    37.5% {
+        background-image: url(../images/daniels/daniels-4.png);
+    }
+    50% {
+        background-image: url(../images/daniels/daniels-5.png);
+    }
+    62.5% {
+        background-image: url(../images/daniels/daniels-6.png);
+    }
+    75% {
+        background-image: url(../images/daniels/daniels-7.png);
+    }
+    87.5% {
+        background-image: url(../images/daniels/daniels-8.png);
+    }
+    100% {
+        background-image: url(../images/daniels/daniels-1.png);
+    }
+}
+@keyframes yeoh-animation {
+    0% {
+        background-image: url(../images/cast/yeoh-1.png);
+    }
+    25% {
+        background-image: url(../images/cast/yeoh-2.png);
+    }
+    50% {
+        background-image: url(../images/cast/yeoh-3.png);
+    }
+    75% {
+        background-image: url(../images/cast/yeoh-4.png);
+    }
+    100% {
+        background-image: url(../images/cast/yeoh-1.png);
+    }
+}
+@keyframes quan-animation {
+    0% {
+        background-image: url(../images/cast/quan-1.png);
+    }
+    25% {
+        background-image: url(../images/cast/quan-2.png);
+    }
+    50% {
+        background-image: url(../images/cast/quan-3.png);
+    }
+    75% {
+        background-image: url(../images/cast/quan-4.png);
+    }
+    100% {
+        background-image: url(../images/cast/quan-1.png);
+    }
+}
+@keyframes hsu-animation {
+    0% {
+        background-image: url(../images/cast/hsu-1.png);
+    }
+    25% {
+        background-image: url(../images/cast/hsu-2.png);
+    }
+    50% {
+        background-image: url(../images/cast/hsu-3.png);
+    }
+    75% {
+        background-image: url(../images/cast/hsu-4.png);
+    }
+    100% {
+        background-image: url(../images/cast/hsu-1.png);
+    }
+}
+@keyframes curtis-animation {
+    0% {
+        background-image: url(../images/cast/curtis-1.png);
+    }
+    25% {
+        background-image: url(../images/cast/curtis-2.png);
+    }
+    50% {
+        background-image: url(../images/cast/curtis-3.png);
+    }
+    75% {
+        background-image: url(../images/cast/curtis-4.png);
+    }
+    100% {
+        background-image: url(../images/cast/curtis-1.png);
+    }
+}
+/* --------------- GENERAL --------------- */
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -99,6 +199,17 @@ a {
     text-align: center;
     padding: 5% 0;
 }
+footer {
+    text-align: center;
+    padding: 5%;
+}
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 32px;
+    margin: 2% 5%;
+}
+/* --------------- HOME --------------- */
 #header {
     width: 100vw;
     height: 968px;
@@ -109,6 +220,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
 }
 #pageTitle {
     font-family: cubano;
@@ -141,6 +255,9 @@ a {
     align-items: center;
     padding: 0 10%;
     justify-content: center;
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
 }
 .home-section h3 {
     font-size: 48px;
@@ -168,24 +285,345 @@ a {
 #jumpingPadHome {
     background-image: url(../images/jumping-pad-bg-mobile.png);
 }
-footer {
-    text-align: center;
-    padding: 5%;
+/* --------------- SECTIONS --------------- */
+.section-content {
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
-.socials {
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 50px 0;
+    text-align: center;
+}
+.section-header h2 {
+    font-size: 56px;
+    font-family: cubano;
+}
+.section-header p {
+    padding: 10px;
+    font-size: 18px;
+}
+/* --------------- DANIELS --------------- */
+#daniels {
+    background-image: url(../images/daniels/daniels-bg-mobile.png);
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.image-background {
+    background-image: url(../images/daniels/daniels-1.png);
+    width: 90vw;
+    height: 90vw;
+    background-size: cover;
+}
+.section-div {
+    padding: 20px;
+}
+#daniels .video-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    position: relative;
+    /* esto no se muy bien como justificarlo, pero es para mantener el ratio del iframe */
+    padding-bottom: 56.25%;
+}
+#daniels .video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section-div iframe {
+    width: 100%;
+}
+.section-div h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.section-div p {
+    font-size: 18px;
+}
+/* --------------- CAST --------------- */
+
+#cast {
+    background-image: url(../images/cast/cast-bg-mobile.png);
+}
+#cast p {
+    font-size: 18px;
+}
+#mainCast {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.cast-member {
+    margin: 20px;
+}
+.cast-member h4 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.scene {
+    display: inline-block;
+    width: 90vw;
+    height: 108vw;
+    margin: 10px 0;
+    perspective: 600px;
+}
+.cast-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.25s;
+    border-style: solid;
+    border-width: 10px;
+}
+.cast-card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    backface-visibility: hidden;
+}
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.cast-card-front {
+    background-size: cover;
+    background-size: cover;
+}
+.cast-card-back {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-evenly;
+}
+.cast-card-back * {
+    padding: 10px 0;
+}
+.cast-card-back h5 {
+    font-size: 32px;
+    font-style: italic;
+}
+.cast-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cast-projs {
     display: flex;
     justify-content: space-evenly;
-    font-size: 32px;
-    margin: 2% 5%;
 }
-@media only screen and (min-width:600px) {
+.cast-projs img {
+    width: 30%;
+}
+#yeoh .cast-card {
+    border-color: #AB0223;
+}
+#yeoh .cast-card-front {
+    background-image: url(../images/cast/yeoh-1.png);
+}
+#yeoh .cast-card-back {
+    background-image: url(../images/cast/yeoh-bg.png);
+}
+#quan .cast-card {
+    border-color: #015E72;
+}
+#quan .cast-card-front {
+    background-image: url(../images/cast/quan-1.png);
+}
+#quan .cast-card-back {
+    background-image: url(../images/cast/quan-bg.png);
+}
+#hsu .cast-card {
+    border-color: #FFFFFF;
+}
+#hsu .cast-card-front {
+    background-image: url(../images/cast/hsu-1.png);
+}
+#hsu .cast-card-back {
+    background-image: url(../images/cast/hsu-bg.png);
+}
+#curtis .cast-card {
+    border-color: #EB8600;
+}
+#curtis .cast-card-front {
+    background-image: url(../images/cast/curtis-1.png);
+}
+#curtis .cast-card-back {
+    background-image: url(../images/cast/curtis-bg.png);
+}
+/* --------------- A24 --------------- */
+#a24 {
+    background-image: url(../images/a24/a24-bg-mobile.png);
+}
+#a24 .section-div {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+#a24 .video-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    position: relative;
+    /* esto no se muy bien como justificarlo, pero es para mantener el ratio del iframe */
+    padding-bottom: 56.25%;
+}
+#a24 .video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#a24 .section-div-video {
+    width: 80%;
+    margin: 20px auto;
+}
+#a24 .section-div p {
+    padding: 20px;
+    background-color: #000000;
+    margin: 20px auto;
+}
 
+
+/* --------------Slider Automatico-------------- */
+/* ----para esta parte tuve que usar como------- */
+/* ----referencia un slider 3d que encontre----- */
+/* ----en codepen. De todos modos lo adapte----- */
+/* ----bastante para que se pareciera a lo------ */
+/* ----que queria. Por las dudas adjunto el----- */
+/* ----link:------------------------------------ */
+/* ----https://codepen.io/wahsand/pen/wvyKwqo--- */
+
+
+/* --------------Container-------------- */
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    perspective: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+} 
+/* ---------Slide--------- */
+.container .slide {
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 30s infinite linear;
+} 
+.container .slide:hover {
+    animation-play-state: paused;
 }
+/* Horizontal Rotation Animation */
+@keyframes rotation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-360deg);
+    }
+}
+/* --------- Box--------- */
+.container .slide .box {
+    max-width: 450px;
+    position: absolute;
+    background: #000000;
+    padding: 10px;
+    margin: 0 10px;
+}
+.container .slide .box:nth-child(1) {
+    transform: rotateY(30deg) translateZ(500px);
+} 
+.container .slide .box:nth-child(2) {
+    transform: rotateY(60deg) translateZ(500px);
+} 
+.container .slide .box:nth-child(3) {
+    transform: rotateY(90deg) translateZ(500px);
+} 
+.container .slide .box:nth-child(4) {
+    transform: rotateY(120deg) translateZ(500px);
+} 
+.container .slide .box:nth-child(5) {
+    transform: rotateY(150deg) translateZ(500px);
+} 
+.container .slide .box:nth-child(6) {
+    transform: rotateY(180deg) translateZ(500px);
+}
+.container .slide .box:nth-child(7) {
+    transform: rotateY(210deg) translateZ(500px);
+}
+.container .slide .box:nth-child(8) {
+    transform: rotateY(240deg) translateZ(500px);
+}
+.container .slide .box:nth-child(9) {
+    transform: rotateY(270deg) translateZ(500px);
+}
+.container .slide .box:nth-child(10) {
+    transform: rotateY(300deg) translateZ(500px);
+}
+.container .slide .box:nth-child(11) {
+    transform: rotateY(330deg) translateZ(500px);
+}
+.container .slide .box:nth-child(12) {
+    transform: rotateY(360deg) translateZ(500px);
+} 
+/* Image */
+.container .box .img {
+    max-width: 200px;
+    max-height: 300px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+} 
+.container .box:hover .img {
+    transform: scale(0.95);
+} 
+.container .box .img > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* --------------- DESKTOP --------------- */
+
 
 @media only screen and (min-width: 768px) {
 
     .navbar {
-        font-size: 12px;
+        font-size: 16px;
     }
     .navbar-nav {
         width: 80%;
@@ -193,7 +631,7 @@ footer {
         margin: 0 auto;
     }
     .nav-link {
-        padding: 0 20px;
+        padding: 5px;
     }
     #header {
         width: 100vw;
@@ -211,9 +649,9 @@ footer {
         font-size: 96px;
         padding: 0;
     }
-    #pageTitle h1:hover, .home-section h3:hover {
+    #pageTitle h1:hover, .home-section h3:hover, .section-header h2:hover {
         animation-name: font-changer;
-        animation-duration: 0.5s;
+        animation-duration: 0.7s;
         animation-iteration-count: infinite;
     }
     #pageTitle h2 {
@@ -267,4 +705,152 @@ footer {
         font-size: 16px;
     }
 
+    .section-header {
+        margin: 50px 100px;
+        height: auto;
+    }
+    .section-header h2 {
+        font-size: 96px;
+        font-family: cubano;
+    }
+    .section-header p, .section-div p {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .image-background {
+        background-image: url(../images/daniels/daniels-1.png);
+        width: 40vw;
+        height: 40vw;
+        background-size: cover;
+    }
+    .image-background:hover {
+        animation-name: daniels-animation;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+    }
+    .section-div {
+        display: flex;
+        margin: 50px 0;
+    }
+    #daniels .section-div-video {
+        width: 50%;
+    }
+    .section-div-text {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .section-div-text h3 {
+        text-align: center;
+        font-size: 56px;
+        font-weight: bold;
+    }
+    #daniels {
+        background-image: url(../images/daniels/daniels-bg.png); 
+    }
+    #cast {
+        background-image: url(../images/cast/cast-bg.png);
+    }
+    #mainCast {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cast-member {
+        margin: 50px;
+    }
+    .cast-member h4 {
+        font-size: 40px;
+    }
+    .scene {
+        display: inline-block;
+        width: 30vw;
+        height: 36vw;
+        margin: 10px 0;
+        perspective: 600px;
+    }
+    .cast-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+        transition: transform 0.25s;
+        border-style: solid;
+        border-width: 10px;
+    }
+    .cast-card.is-flipped {
+        transform: translateX(-100%) rotateY(-180deg);
+    }
+    .card__face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: white;
+        backface-visibility: hidden;
+    }
+    .card__face--back {
+        transform: rotateY(180deg);
+    }
+    
+    .cast-card-front {
+        background-size: cover;
+        background-size: cover;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+    }
+    #yeoh .cast-card-front:hover {
+        animation-name: yeoh-animation;
+    }
+    #quan .cast-card-front:hover {
+        animation-name: quan-animation;
+    }
+    #hsu .cast-card-front:hover {
+        animation-name: hsu-animation;
+    }
+    #curtis .cast-card-front:hover {
+        animation-name: curtis-animation;
+    }
+    .cast-card-back {
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .cast-card-back * {
+        padding: 10px 0;
+    }
+    .cast-card-back h5 {
+        font-size: 32px;
+        font-style: italic;
+    }
+    .cast-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cast-projs {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .cast-projs img {
+        width: 30%;
+    }
+
+    #a24 {
+        background-image: url(../images/a24/a24-bg.png);
+    }
+    #a24 video {
+        width: 90%;
+    }
+    #a24 .section-div p {
+        padding: 100px;
+    }
+    #a24 .section-div h3 {
+        font-size: 56px;
+    }
 }
