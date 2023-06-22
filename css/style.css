@@ -392,7 +392,7 @@ footer {
     transform-origin: center right;
     transition: transform 0.25s;
     border-style: solid;
-    border-width: 10px;
+    border-width: 5px;
 }
 .cast-card.is-flipped {
     transform: translateX(-100%) rotateY(-180deg);
@@ -503,11 +503,11 @@ footer {
     left: 0;
 }
 #a24 .section-div-video {
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
 }
 #a24 .section-div p {
-    padding: 20px;
+    padding: 50px 20px;
     background-color: #000000;
     margin: 20px auto;
 }
@@ -616,6 +616,88 @@ footer {
 }
 
 
+
+#premios {
+    background-image: url(../images/premios/premios-bg-mobile.png);
+}
+#premios h3 {
+    font-size: 32px;
+}
+#premios .awards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px 0;
+}
+#ccAwards img {
+    width: 10%;
+}
+#ggAwards img {
+    width: 10%;
+}
+#pgAwards img {
+    width: 50%;
+}
+#dgAwards img {
+    width: 50%;
+}
+#wgAwards img {
+    width: 20%;
+}
+#sagAwards img {
+    width: 10%;
+}
+#oscarAwards img {
+    width: 10%;
+}
+#premios ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+#premios ul li {
+    list-style: none;
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+#premios ul li span {
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: block;
+}
+#premios .win {
+    color: #EB8600;
+    font-weight: bold;
+}
+#premios .nomination {
+    opacity: 50%;
+}
+
+
+#jumpingPadBody {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Old Standard TT', serif;
+    background-image: url(../images/jumping-pad/jumping-pad-bg-mobile.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+#jumpingPadBody a {
+    color: #000000;
+}
+#jumpingPadBody footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 50%;
+}
 
 /* --------------- DESKTOP --------------- */
 
@@ -765,24 +847,10 @@ footer {
     }
     .scene {
         display: inline-block;
-        width: 30vw;
-        height: 36vw;
-        margin: 10px 0;
+        width: 25vw;
+        height: 30vw;
+        margin: 10px 50px;
         perspective: 600px;
-    }
-    .cast-card {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        transform-style: preserve-3d;
-        transform-origin: center right;
-        transition: transform 0.25s;
-        border-style: solid;
-        border-width: 10px;
-    }
-    .cast-card.is-flipped {
-        transform: translateX(-100%) rotateY(-180deg);
     }
     .card__face {
         position: absolute;
@@ -853,4 +921,67 @@ footer {
     #a24 .section-div h3 {
         font-size: 56px;
     }
+    #a24 .section-div-video {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #premios {
+        background-image: url(../images/premios/premios-bg.png);
+    }
+    #premios .section-div {
+        flex-direction: column;
+        margin: 50px 100px;
+    }
+    #premios h3 {
+        font-size: 80px;
+        text-align: center;
+        font-weight: bold;
+    }
+    #ccAwards img {
+        width: 5%;
+    }
+    #ggAwards img {
+        width: 5%;
+    }
+    #pgAwards img {
+        width: 20%;
+    }
+    #dgAwards img {
+        width: 20%;
+    }
+    #wgAwards img {
+        width: 10%;
+    }
+    #sagAwards img {
+        width: 5%;
+    }
+    #oscarAwards img {
+        width: 5%;
+    }
+
+    #premios ul li {
+        font-size: 40px;
+        margin: 10px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    #premios .win {
+        color: #EB8600;
+    }
+    #premios .nomination {
+        opacity: 50%;
+    }
+    #premios ul li span {
+        font-weight: normal;
+        color: #FFFFFF;
+        font-size: 24px;
+        display: inline-block;
+    }
+    #jumpingPadBody {
+        background-image: url(../images/jumping-pad/jumping-pad-bg.png);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
 }
