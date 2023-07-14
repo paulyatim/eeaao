@@ -213,22 +213,19 @@ footer {
 #header {
     width: 100vw;
     height: 968px;
-    background-position: center;
+    background-position-y: -140px;
     background-image: url(../images/hero-image-mobile.png);
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100vw;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
 }
 #pageTitle {
     font-family: cubano;
     text-align: center;
     align-self: center;
-    padding-top: 70%;
+    padding-top: 50vh;
 }
 #pageTitle h1 {
     font-size: 48px;
@@ -247,17 +244,14 @@ footer {
 .home-section {
     width: 100%;
     height: 968px;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100vw;
+    background-attachment: scroll;
     background-position: center;
     text-align: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
     justify-content: center;
-    @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
 }
 .home-section h3 {
     font-size: 48px;
@@ -287,8 +281,8 @@ footer {
 }
 /* --------------- SECTIONS --------------- */
 .section-content {
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100vw;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
 }
@@ -323,7 +317,7 @@ footer {
     background-size: cover;
 }
 .section-div {
-    padding: 20px;
+    padding: 50px 20px;
 }
 #daniels .video-container {
     width: 100%;
@@ -368,7 +362,7 @@ footer {
     margin-bottom: 50px;
 }
 .cast-member {
-    margin: 20px;
+    margin: 50px 20px;
 }
 .cast-member h4 {
     font-size: 40px;
@@ -620,6 +614,7 @@ footer {
 #premios {
     background-image: url(../images/premios/premios-bg-mobile.png);
 }
+#premios 
 #premios h3 {
     font-size: 32px;
 }
@@ -720,6 +715,8 @@ footer {
         height: 1200px;
         background-position: 0 20%;
         background-image: url(../images/hero-image.png);
+        background-size: cover;
+        background-attachment: fixed;
     }
     #pageTitle {
         text-align: right;
@@ -749,6 +746,8 @@ footer {
         display: flex;
         align-items: center;
         padding: 0 100px;
+        background-size: cover;
+        background-attachment: fixed;
     }
     .home-section h3 {
         font-size: 96px;
@@ -787,6 +786,10 @@ footer {
         font-size: 16px;
     }
 
+    .section-content {
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .section-header {
         margin: 50px 100px;
         height: auto;
@@ -980,8 +983,6 @@ footer {
     }
     #jumpingPadBody {
         background-image: url(../images/jumping-pad/jumping-pad-bg.png);
-        background-attachment: fixed;
-        background-size: cover;
     }
 
 }
