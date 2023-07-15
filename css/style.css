@@ -678,10 +678,6 @@ footer {
     background-color: #FFFFFF;
     color: #000000;
     font-family: 'Old Standard TT', serif;
-    background-image: url(../images/jumping-pad/jumping-pad-bg-mobile.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
 }
 #jumpingPadBody a {
     color: #000000;
@@ -691,7 +687,63 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #FFFFFF;
-    opacity: 50%;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#rock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#rock img {
+    width: 50%;
+}
+#jumpingPadBody p {
+    font-size: 16px;
+}
+#messageBox {
+    margin: 5px 25px;
+}
+#messageBox .initial {
+    opacity: 0;
+    animation: fadeInAnimation 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#messageBox .initial:nth-child(1) {
+    animation-delay: 8s;
+}
+#messageBox .initial:nth-child(2) {
+    animation-delay: 10s;
+}
+#messageBox .initial:nth-child(3) {
+    animation-delay: 13s;
+}
+#messageBox .options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+#messageBox .optionsInitial {
+    opacity: 0;
+    animation: fadeInAnimation 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;
+}
+#messageBox .options button {
+    padding: 5px 20px;
+    font-weight: bold
 }
 
 /* --------------- DESKTOP --------------- */
@@ -981,8 +1033,25 @@ footer {
         font-size: 24px;
         display: inline-block;
     }
-    #jumpingPadBody {
-        background-image: url(../images/jumping-pad/jumping-pad-bg.png);
-    }
 
+    #rock {
+        position: absolute;
+        bottom: 14%;
+    }
+    #rock img {
+        width: 200px;
+    }
+    #jumpingPadBody p {
+        font-size: 18px;
+    }
+    #messageBox {
+        margin: 10px 20%;
+        text-align: center;
+    }
+    #messageBox .options {
+        justify-content: center;
+    }
+    #messageBox .options button {
+        margin: 20px;
+    }
 }
